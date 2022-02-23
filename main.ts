@@ -1,10 +1,12 @@
 basic.forever(function () {
     if (input.temperature() > 22) {
-        basic.showIcon(IconNames.Heart)
+        basic.showIcon(IconNames.Sad)
         basic.pause(100)
-        basic.showIcon(IconNames.StickFigure)
+        basic.showIcon(IconNames.Butterfly)
     } else {
-        basic.showIcon(IconNames.TShirt)
+        basic.showIcon(IconNames.Sword)
+        basic.pause(1000)
+        basic.showIcon(IconNames.Ghost)
         basic.pause(1000)
         music.ringTone(131)
         basic.pause(500)
@@ -17,5 +19,11 @@ basic.forever(function () {
         music.ringTone(196)
         basic.pause(500)
         music.ringTone(220)
+        basic.pause(1000)
+        music.ringTone(131)
+        basic.pause(500)
+        music.ringTone(131)
+        basic.pause(500)
+        music.ringTone(165)
     }
 })
